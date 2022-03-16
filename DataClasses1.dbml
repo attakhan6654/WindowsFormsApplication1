@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="abc" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=AttaKhan009;Initial Catalog=abc;Integrated Security=True" SettingsObjectName="WindowsFormsApplication1.Properties.Settings" SettingsPropertyName="abcConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CashIn" Member="CashIns">
+    <Type Name="CashIn">
+      <Column Name="CashTotal" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CashCome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CashNet" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CashOut" Member="CashOuts">
+    <Type Name="CashOut">
+      <Column Name="CashTotal" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CashGo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CashNet" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.login" Member="logins">
+    <Type Name="login">
+      <Column Name="username" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.loginTbl" Member="loginTbls">
+    <Type Name="loginTbl">
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyCusTab" Member="MyCusTabs">
+    <Type Name="MyCusTab">
+      <Column Name="CusID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CusName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CusAddress" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CusPhone" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyinfoTab" Member="MyinfoTabs">
+    <Type Name="MyinfoTab">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Age" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyInvTab" Member="MyInvTabs">
+    <Type Name="MyInvTab">
+      <Column Name="InvID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="InvName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="InvCompany" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="InvPhone" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NewStaff" Member="NewStaffs">
+    <Type Name="NewStaff">
+      <Column Name="SID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Fname" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="lname" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="dob" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="mobile" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="joindate" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="city" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="basicSalary" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="post" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Student" Member="Students">
+    <Type Name="Student">
+      <Column Name="Sid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="sName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SPhoneno" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.STUDENT_DETAILS" Member="STUDENT_DETAILs">
+    <Type Name="STUDENT_DETAIL">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AGE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PICTURE" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Table]" Member="Tables">
+    <Type Name="Table">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserPic" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.test" Member="tests">
+    <Type Name="test">
+      <Column Name="sid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="sname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="smno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="cdate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="UserId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UserPassword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyUseTab" Member="MyUseTabs">
+    <Type Name="MyUseTab">
+      <Column Name="UseFName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UseLName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UseName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UsePassword" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UsePhone" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="UseCnic" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UserID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyUserTab" Member="MyUserTabs">
+    <Type Name="MyUserTab">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UserPassword" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
